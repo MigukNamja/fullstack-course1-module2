@@ -10,3 +10,10 @@ p arr.select { |element| element % 3 == 0 }
 # and use `sort` and `reverse` methods to sort in descending order
 # Start with the line below and continue as 1 long method chain
 # p arr.select { |element| element % 3 == 0 }
+
+# Write a single chain of commands to find all numbers that:
+# * are from an array of numbers 1..10000 inclusive
+# * are divisible by 3
+# * are not less than 5000
+# * sorted in reverse order
+p (1..10000).to_a.select{ |e| e % 3 == 0 }.reject{ |e| e < 5000 }.sort.reverse
